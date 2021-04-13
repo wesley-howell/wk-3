@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   // Use the random integer to grab a promotion from the Array of promotions
   let RandomPromotion = data.promotions[RandomInt]
   // and store it in memory
-  console.log(`random promotion is: ${RandomPromotion}`)
+  console.log(`random promotion is: ${RandomPromotion.description}`)
 
   // Figure out which emoji should be displayed, store it in memory
 
