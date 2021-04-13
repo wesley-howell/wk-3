@@ -31,34 +31,57 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // PART 1
   // Figure out how products there are, and store that number in memory
+  let NumberProducts = data.products.length
 
   // Figure out how promotions there are, and store that number in memory
+  let NumberPromotions = data.promotions.length
 
   // Write the number of products to the JavaScript console
+  console.log(`There are ${NumberProducts} products`)
 
   // Write the number of promotions to the JavaScript console
+  console.log(`There are ${NumberPromotions} promotions`)
 
   // PART 2
   // Store the first product in memory
-
+  let FirstProduct = data.products[0].name
+  
   // Write the first product to the JavaScript console, on three separate lines
+  console.log(`product 1 name: ${data.products[0].name}`)
+  console.log(`product 1 description: ${data.products[0].description}`)
+  console.log(`product 1 price: ${data.products[0].price}`)
 
   // Repeat for the 2nd and 3rd products
+  
+  
   // Store the second product in memory
+  let SecondProduct = data.products[1].name
 
   // Write the product to the JavaScript console, on three separate lines
+  console.log(`product 2 name: ${data.products[1].name}`)
+  console.log(`product 2 description: ${data.products[1].description}`)
+  console.log(`product 2 price: ${data.products[1].price}`)
   
   // Store the third product in memory
+  let ThirdProduct = data.products[2].name
 
   // Write the product to the JavaScript console, on three separate lines
+  console.log(`product 3 name: ${data.products[2].name}`)
+  console.log(`product 3 description: ${data.products[2].description}`)
+  console.log(`product 3 price: ${data.products[2].price}`)
+
 
   // PART 3
   // Get a random integer between 1 and 10
+  
 
   // Subtract one from that random integer because Arrays are zero-based
+  let RandomInt = getRandomInt(10) - 1
 
   // Use the random integer to grab a promotion from the Array of promotions
+  let RandomPromotion = data.promotions[RandomInt]
   // and store it in memory
+  console.log(`random promotion is: ${RandomPromotion}`)
 
   // Figure out which emoji should be displayed, store it in memory
 
